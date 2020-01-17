@@ -1,3 +1,3 @@
 # Basic Firebase Stuff
 
-- [basic form](https://github.com/user/repo/blob/branch/other_file.md)
+- [basic form](https://github.com/jmnelson12/basic-firebase-stuff/tree/master/basicForm)
