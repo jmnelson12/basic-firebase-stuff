@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Todo List</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 25px;
+        }
+
+        h1 {
+            margin: 2rem 0;
+        }
+
+        input[type="submit"] {
+            padding: 0 8px;
+        }
+
+        #todoItems .item {
+            display: flex;
+            margin: 5px 0;
+            cursor: pointer;
+            justify-content: space-between;
+        }
+
+        #todoItems .item:nth-of-type(even) {
+            background-color: #EFEFEF;
+        }
+
+        #todoItems .item.done {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple CRUD Todo List</h1>
+
+    <form id="todoForm">
+        <label for="txtTodo">Add Item: </label>
+        <input type="text" id="txtTodo">
+        <input type="submit" value="Add">
+    </form>
+    <br>
+    <button id="btnClear">Clear All</button>
+    <br>
+    <br>
+    <div id="todoItems"></div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
