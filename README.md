@@ -6,5 +6,3 @@
 
 
 ## TODO/Ideas
-
-- Basic Hosted Site
